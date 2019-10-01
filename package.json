@@ -1,5 +1,5 @@
 {
-  "name": "@tesseract/eslint-config",
+  "name": "@apsphysics/eslint-config",
   "version": "0.0.1",
   "description": "ESLint configurations for immutable React/TypeScript projects.",
   "author": "@APSPhysics",
