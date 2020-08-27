@@ -7,7 +7,7 @@
   "scripts": {
     "format": "prettier --write *.js",
     "lint": "eslint *.js",
-    "test": "npm run format && npm run lint",
+    "test": "npm run lint",
     "release": "np --no-publish"
   },
   "repository": {
