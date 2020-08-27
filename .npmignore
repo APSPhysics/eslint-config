@@ -5,4 +5,5 @@ node_modules
 CHANGELOG.md
 .prettierrc
 .eslintrc
+test-react-app
 
