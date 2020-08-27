@@ -5,9 +5,10 @@
   "author": "APSPhysics",
   "main": "index.js",
   "scripts": {
-    "ci": "npm run lint && npm run format",
+    "ci": "npm run format && npm run lint",
     "format": "prettier --write *.js",
     "lint": "eslint *.js",
+    "test": "yarn run ci",
     "release": "np --no-publish"
   },
   "repository": {
