@@ -2,7 +2,9 @@
 
 **Default ESLint configuration for APS Physics sites.**
 
-This project includes a sensible set of default **ESLint** rules for React and TypeScript code. Many of the rules favor a functional style with a strong emphasis on immutability and strong type definitions.
+This project includes a sensible set of default **ESLint** rules for React and TypeScript projects.
+
+Many of the rules favor a functional style with a strong emphasis on immutability and strong type definitions.
 
 ## Features
 
@@ -17,20 +19,20 @@ This project includes a sensible set of default **ESLint** rules for React and T
 
 ## Installation
 
-Please see the [Configuration Guide](../../README.md#configuration) in the main project README if you haven't already configured your app to use tesseract-ui.
-
-With `install-peerdeps`:
+With `install-peerdeps` (recommended):
 
 ```sh
-npx install-peerdeps @APSPhysics/tesseract-ui-eslint-config --dev
+npx install-peerdeps @APSPhysics/eslint-config --dev
 ```
 
 This will install the library along with all of it's necessary dependencies.
 
+-or-
+
 Manually:
 
 ```
-npm i --dev @APSPhysics/tesseract-ui-eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-immutable eslint-plugin-import  eslint-plugin-flowtype eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-standard prettier typescript
+npm i --dev @APSPhysics/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-flowtype eslint-plugin-immutable eslint-plugin-import  eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-standard prettier typescript
 ```
 
 ## Usage
@@ -39,7 +41,7 @@ Once the library and all required dependencies are installed, you can use it by 
 
 ```json
 {
-  "extends": ["@APSPhysics/tesseract-ui-eslint-config"],
+  "extends": ["@APSPhysics/eslint-config"],
   "rules": {}
 }
 ```
@@ -50,7 +52,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["@APSPhysics/tesseract-ui-eslint-config"],
+  "extends": ["@APSPhysics/eslint-config"],
   "rules": {
     "functional/no-mixed-type": "warn"
   }
