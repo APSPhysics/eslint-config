@@ -8,7 +8,7 @@
     "ci": "npm run lint && npm run format",
     "format": "prettier --write *.js",
     "lint": "eslint *.js",
-    "publish": "np --no-publish"
+    "release": "np --no-publish"
   },
   "repository": {
     "type": "git",
