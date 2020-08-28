@@ -1,6 +1,6 @@
 {
   "name": "@apsphysics/eslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ESLint configurations for immutable React & TypeScript projects.",
   "author": "APSPhysics",
   "main": "index.js",
