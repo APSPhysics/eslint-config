@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/APSPhysics/eslint-config-tesseract.git"
+    "url": "git://github.com/APSPhysics/eslint-config.git"
   },
   "engines": {
     "node": ">= 6"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/APSPhysics/eslint-config-tesseract/issues"
+    "url": "https://github.com/APSPhysics/eslint-config/issues"
   },
-  "homepage": "https://github.com/APSPhysics/eslint-config-tesseract#readme",
+  "homepage": "https://github.com/APSPhysics/eslint-config#readme",
   "dependencies": {},
   "keywords": [
     "eslint",
