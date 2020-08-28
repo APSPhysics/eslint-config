@@ -1,10 +1,8 @@
 # @APSPhysics/eslint-config
 
-**Default ESLint configuration for APS Physics sites.**
+**ESLint configuration for APS Physics sites.**
 
-This project includes a sensible set of default **ESLint** rules for React and TypeScript projects.
-
-Many of the rules favor a functional style with a strong emphasis on immutability and strong type definitions.
+This project includes a sensible set of default **ESLint** rules for React and TypeScript projects. Many of the rules favor a functional style with a strong emphasis on immutability and strong type definitions.
 
 ## Features
 
