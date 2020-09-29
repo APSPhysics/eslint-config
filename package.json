@@ -15,14 +15,18 @@
     "url": "git://github.com/APSPhysics/eslint-config.git"
   },
   "engines": {
-    "node": ">= 6"
+    "node": "^10.12.0 || >=12.0.0"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/APSPhysics/eslint-config/issues"
   },
   "homepage": "https://github.com/APSPhysics/eslint-config#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0"
+  },
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -54,26 +58,36 @@
     "typescript": "^3.6.2"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=3.10.1",
-    "@typescript-eslint/parser": ">=3.10.1",
-    "babel-eslint": ">=10.1.0",
-    "eslint": ">=7.7.0",
-    "eslint-config-prettier": ">=6.11.0",
-    "eslint-config-react-app": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": ">=6.12.0",
+    "eslint-config-react-app": "^5.2.0",
     "eslint-plugin-flowtype": "^5.2.0",
-    "eslint-plugin-functional": "^3.0.2",
+    "eslint-plugin-functional": "^3.0.0",
     "eslint-plugin-immutable": ">=1.0.0",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": ">=23.20.0",
-    "eslint-plugin-jsx-a11y": ">=6.3.1",
-    "eslint-plugin-prettier": ">=3.1.4",
-    "eslint-plugin-react": ">=7.20.6",
+    "eslint-plugin-jest": ">=24.0.0",
+    "eslint-plugin-jsx-a11y": ">=6.3.0",
+    "eslint-plugin-prettier": ">=3.1.0",
+    "eslint-plugin-react": ">=7.21.0",
     "eslint-plugin-react-hooks": ">=4.1.0",
-    "eslint-plugin-standard": ">=4.0.1",
-    "prettier": ">=2.1.1",
-    "typescript": ">=4.0.2"
+    "eslint-plugin-standard": ">=4.0.0",
+    "prettier": ">=2.0.0",
+    "typescript": ">=4.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
