@@ -2,10 +2,11 @@
 module.exports = {
   extends: [
     "react-app", // See below
+    "plugin:jsx-a11y/recommended",
     "plugin:functional/recommended",
     "plugin:prettier/recommended", // Should always be last. Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ["functional"],
+  plugins: ["functional", "jsx-a11y", "prettier"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off", // This rule prevents you from letting React component return types be inferred.
     "functional/no-expression-statement": "off", // This rule causes an error with ReactDOM.render()
@@ -16,6 +17,7 @@ module.exports = {
     "functional/no-conditional-statement": "off", // if statements are useful and quite nice for conditional component rendering logic.
     "functional/no-return-void": "off", // In React, you are often returning void. i.e. useState setters
     "functional/no-try-statement": "off", // What's wrong with a try/catch? They are very useful with async/await.
+    "prettier/prettier": "error",
   },
 };
 
