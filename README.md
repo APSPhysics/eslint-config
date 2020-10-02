@@ -2,7 +2,7 @@
 
 **ESLint configuration for APS Physics sites.**
 
-This project includes a sensible set of default **ESLint** rules for React and TypeScript projects. Many of the rules favor a functional style with a strong emphasis on immutability and strong type definitions.
+This project includes a sensible set of default **ESLint** rules for React/TypeScript projects with a strong emphasis on immutability and accessibility.
 
 ## Features
 
@@ -17,8 +17,16 @@ This project includes a sensible set of default **ESLint** rules for React and T
 
 ## Installation
 
+This package has several peer dependencies that need to be installed to work properly. You can see the full list with the following command:
+
+```sh
+npm info "@apsphysics/eslint-config" peerDependencies
 ```
-yarn add -D @APSPhysics/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-flowtype eslint-plugin-functional eslint-plugin-immutable eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-standard prettier typescript
+
+Here is the script to add this package along with all of it's required dependencies:
+
+```sh
+yarn add -D @apsphysics/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-flowtype eslint-plugin-functional eslint-plugin-immutable eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-standard prettier typescript
 ```
 
 ## Usage
@@ -27,8 +35,7 @@ Once the library and all required dependencies are installed, you can use it by 
 
 ```json
 {
-  "extends": ["@APSPhysics/eslint-config"],
-  "rules": {}
+  "extends": ["@apsphysics"]
 }
 ```
 
@@ -38,7 +45,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["@APSPhysics/eslint-config"],
+  "extends": ["@apsphysics"]
   "rules": {
     "functional/no-mixed-type": "warn"
   }
