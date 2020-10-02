@@ -1,8 +1,6 @@
 # @apsphysics/eslint-config
 
-**ESLint configuration for APS Physics sites.**
-
-This project includes a sensible set of default **ESLint** rules for React/TypeScript projects with a strong emphasis on immutability and accessibility.
+A sensible set of ESLint rules for React/TypeScript projects with an emphasis on immutability and accessibility.
 
 ## Table of Contents
 
@@ -14,14 +12,14 @@ This project includes a sensible set of default **ESLint** rules for React/TypeS
 
 ## Features
 
-- TypeScript
-- React
-- React Hooks
-- React A11y
-- Jest
-- import statements
-- Prettier integration
-- Functional rules
+- Editor and Prettier Integrations
+- Rules for
+  - TypeScript
+  - React and React Hooks
+  - A11y with React
+  - Testing with Jest
+  - Import Statements
+  - Functional and Immutable Patterns
 
 ## Installation
 
@@ -31,7 +29,7 @@ This package has several peer dependencies that need to be installed to work pro
 npm info "@apsphysics/eslint-config" peerDependencies
 ```
 
-Here is the script to add this package along with all of it's required dependencies:
+This script adds the package along with all of it's required dependencies:
 
 ```sh
 yarn add -D @apsphysics/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-flowtype eslint-plugin-functional eslint-plugin-immutable eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-standard prettier typescript
@@ -53,7 +51,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["@apsphysics"]
+  "extends": ["@apsphysics"],
   "rules": {
     "functional/no-mixed-type": "warn"
   }
