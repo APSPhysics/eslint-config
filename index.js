@@ -8,6 +8,7 @@ module.exports = {
   ],
   plugins: ["functional", "jsx-a11y", "prettier"],
   rules: {
+    "no-console": ["warn", { allow: ["warn", "error"] }],
     "sort-imports": "warn",
     "@typescript-eslint/explicit-function-return-type": "off", // This rule prevents you from letting React component return types be inferred.
     "functional/no-expression-statement": "off", // This rule causes an error with ReactDOM.render()
