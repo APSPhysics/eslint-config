@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.0.16
+
+- Updated dependencies
+- Removed sort imports rule
+
+## 0.0.15
+
+- Updated dependencies
+- Added sort imports rule
+
 ## 0.0.14
 
 - Build configuration updates
