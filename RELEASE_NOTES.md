@@ -1,6 +1,13 @@
-## 0.0.15
+## 0.0.17
 
-2021-07-29
+- Updated deprecated dependency
+
+## 0.0.16
+
+- Removed sort import rules
+- Update dependencies
+
+## 0.0.15
 
 - Moved most peer dependencies to library dependencies (excluding TypeScript, ESLint, and Prettier)
 - Added rules for console statements
