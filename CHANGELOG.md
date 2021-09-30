@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.17 & 0.0.18
+
+- Resolve dependency issues
+
 ## 0.0.16
 
 - Updated dependencies
