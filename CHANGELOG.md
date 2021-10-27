@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.0.20
+
+- Added missing peer dep for ESLint 8
+
 ## 0.0.19
 
 - Updated dependencies to support ESLint 8
