@@ -6,9 +6,9 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write *.js",
-    "lint": "eslint *.js",
+    "lint": "eslint",
     "test": "npm run lint",
-    "prerelease": "npm run test && npm run lint && npm run format",
+    "prerelease": "npm run test && npm run format",
     "release": "npm run prerelease && np --no-publish"
   },
   "repository": {
