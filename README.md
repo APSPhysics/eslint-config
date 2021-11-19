@@ -23,16 +23,8 @@ A sensible set of ESLint rules for React/TypeScript projects with an emphasis on
 
 ## Installation
 
-This package has several peer dependencies that need to be installed to work properly. You can see the full list with the following command:
-
 ```sh
-npm info "@apsphysics/eslint-config" peerDependencies
-```
-
-This script adds the package along with all of it's required dependencies:
-
-```sh
-yarn add -D @apsphysics/eslint-config @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-eslint eslint eslint-config-prettier eslint-config-react-app eslint-plugin-flowtype eslint-plugin-functional eslint-plugin-immutable eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier typescript
+yarn add -D @apsphysics/eslint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -62,7 +54,7 @@ Please refer to the documentation for each dependency to learn what options are 
 
 ## About
 
-This package extends the popular [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app) package, which is created and maintained the Facebook team. This configuration package is actively maintained and includes sensible rules for React-specific apps, including hooks usage. It also includes accessibility rules via [react-a11y](https://github.com/reactjs/react-a11y) as well as rules for import statements and a few other niceties.
+This package extends the popular [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) package. It also includes accessibility rules via [react-a11y](https://github.com/reactjs/react-a11y) as well as rules for import statements and a few other niceties.
 
 [eslint-config-react-app](https://www.npmjs.com/package/eslint-config-react-app):
 
