@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.0.22
+
+- Fix peer dep for ESLint 8
+
 # 0.0.21
 
 - Replaced `eslint-config-react-app` with custom rules solutions
