@@ -1,5 +1,11 @@
 # Change Log
 
+# 0.0.21
+
+- Replaced `eslint-config-react-app` with custom rules solutions
+- Added and extended from `eslint-config-airbnb`
+- Updated usage documentation
+
 # 0.0.20
 
 - Added missing peer dep for ESLint 8
