@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.0.23
+
+- Refactors to rules to address import bug
+
 # 0.0.22
 
 - Fix peer dep for ESLint 8
