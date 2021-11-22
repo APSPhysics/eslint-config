@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.0.24
+
+- Fix lock file issue causing publish failure
+
 # 0.0.23
 
 - Refactors to rules to address import bug
