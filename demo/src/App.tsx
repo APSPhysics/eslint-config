@@ -1,12 +1,16 @@
 // 'useState' is defined but never used.eslint@typescript-eslint/no-unused-vars
 import file from "./file";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const x = 3;
 
 function App() {
   // Unexpected let, use const instead.eslintfunctional/no-let
   let x = 3;
+
+  useEffect(() => {
+    console.log(x);
+  }, []);
 
   var hello;
 
