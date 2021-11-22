@@ -24,15 +24,6 @@ module.exports = {
     "functional/prefer-readonly-type": "off", // Off for now. Do we want to have to annotate everything with readonly? To be discussed.
     "functional/prefer-type-literal": "off", // Interfaces are fine. Some people prefer to extend.
     "import/prefer-default-export": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        ts: "never",
-        tsx: "never",
-      },
-    ],
-    "max-len": ["warn", { code: 90 }],
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-shadow": "off",
     "no-use-before-define": "off",
@@ -42,10 +33,5 @@ module.exports = {
     "react/function-component-definition": "off",
     "react/jsx-filename-extension": ["warn", { extensions: [".tsx"] }],
     "react/prop-types": "off",
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {},
-    },
   },
 };
