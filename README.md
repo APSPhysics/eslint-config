@@ -19,7 +19,7 @@ A sensible set of ESLint rules for React/TypeScript projects with an emphasis on
   - A11y with React
   - Testing with Jest
   - Import Statements
-  - Functional and Immutable Patterns
+  - Functional Patterns
 
 ## Installation
 
