@@ -1,5 +1,10 @@
 # Change Log
 
+# 0.0.28
+
+- Improved Prettier integrationn
+- Updated dependencies
+
 # 0.0.25
 
 - Move back to using `eslint-config-react-app` as base now that ESLint 8 is officially supported.
