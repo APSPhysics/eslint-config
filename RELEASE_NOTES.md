@@ -1,5 +1,11 @@
 # Change Log
 
+# 0.0.29
+
+- Added rulesets for Jest, immutable data, and console statements
+- Updated and pruned dependencies
+- Updated demo to use React 18
+
 # 0.0.28
 
 - Improved Prettier integrationn
