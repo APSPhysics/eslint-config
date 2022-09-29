@@ -1,7 +1,9 @@
 /* eslint-disable functional/immutable-data */
 module.exports = {
   extends: [
+    "eslint:recommended",
     "react-app", // See below
+    "react-app/jest",
     "prettier",
     "plugin:jsx-a11y/recommended",
     "plugin:functional/recommended",
@@ -18,6 +20,11 @@ module.exports = {
     "functional/no-conditional-statement": "off", // if statements are useful and quite nice for conditional component rendering logic.
     "functional/no-return-void": "off", // In React, you are often returning void. i.e. useState setters
     "functional/no-try-statement": "off", // What's wrong with a try/catch? They are very useful with async/await.
+    "functional/immutable-data": [
+      "warn",
+      { ignorePattern: ["^module\\.exports"] },
+    ],
+    "no-console": ["error", { allow: ["error", "warn", "info"] }],
     "prettier/prettier": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
