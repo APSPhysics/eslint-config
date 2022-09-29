@@ -1,5 +1,9 @@
 # Change Log
 
+# 1.0.0
+
+- Moved to public Github package
+
 # 0.0.29
 
 - Added rulesets for Jest, immutable data, and console statements
