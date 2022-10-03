@@ -28,6 +28,11 @@ module.exports = {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
+    // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
+    "@typescript-eslint/ban-ts-comment": [
+      2,
+      { "ts-expect-error": "allow-with-description" },
+    ],
   },
 };
 
