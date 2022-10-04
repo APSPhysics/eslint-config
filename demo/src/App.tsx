@@ -2,8 +2,12 @@
 import file from "./file";
 import React, { useState, useEffect } from "react";
 
-const x = 3;
+let x = 3;
 
+// @ts-expect-error: Error with this code
+x = false;
+
+// @ts-ignore
 function App() {
   // Unexpected let, use const instead.eslintfunctional/no-let
   let x = 3;
