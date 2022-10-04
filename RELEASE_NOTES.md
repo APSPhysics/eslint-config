@@ -1,5 +1,15 @@
 # Change Log
 
+# 1.1.0
+
+- New `no-public-secrets` rule to prevent secrets from being committed to source control
+- New `ban-ts-comments` rule to prevent `@ts-ignore` and `@ts-nocheck` comments from being committed to source control
+- New Jest test for `no-public-secrets` rule
+- Updated dependencies
+- Updated README documentation
+- Updated Demo app
+- Updated lock file
+
 # 1.0.0
 
 - Moved to public Github package
