@@ -4,6 +4,8 @@ const clientSidePrepends = [
   "PUBLIC_",
   // NextJS
   "NEXT_PUBLIC_",
+  // Vite
+  "VITE_",
   // Gatsby: https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/#accessing-environment-variables-in-the-browser
   "GATSBY_",
 ];
