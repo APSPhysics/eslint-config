@@ -4,6 +4,10 @@ import React, { useState, useEffect } from "react";
 
 let x = 3;
 
+const env = import.meta.env.VITE_PUBLIC_SECRET_EXAMPLE;
+
+console.info(env);
+
 // @ts-expect-error: Error with this code
 x = false;
 
@@ -11,6 +15,8 @@ x = false;
 function App() {
   // Unexpected let, use const instead.eslintfunctional/no-let
   let x = 3;
+
+  console.log("test");
 
   useEffect(() => {
     console.log(x);
