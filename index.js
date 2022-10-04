@@ -1,11 +1,15 @@
-// eslint-disable-next-line functional/immutable-data
+/* eslint-disable functional/immutable-data */
 module.exports = {
   extends: [
+    "eslint:recommended",
     "react-app", // See below
+    "react-app/jest",
+    "prettier",
+    "plugin:jsx-a11y/recommended",
     "plugin:functional/recommended",
     "plugin:prettier/recommended", // Should always be last. Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ["functional"],
+  plugins: ["functional", "jsx-a11y", "prettier"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off", // This rule prevents you from letting React component return types be inferred.
     "functional/no-expression-statement": "off", // This rule causes an error with ReactDOM.render()
@@ -16,6 +20,19 @@ module.exports = {
     "functional/no-conditional-statement": "off", // if statements are useful and quite nice for conditional component rendering logic.
     "functional/no-return-void": "off", // In React, you are often returning void. i.e. useState setters
     "functional/no-try-statement": "off", // What's wrong with a try/catch? They are very useful with async/await.
+    "functional/immutable-data": [
+      "warn",
+      { ignorePattern: ["^module\\.exports"] },
+    ],
+    "no-console": ["error", { allow: ["error", "warn", "info"] }],
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
+    "@typescript-eslint/ban-ts-comment": [
+      2,
+      { "ts-expect-error": "allow-with-description" },
+    ],
   },
 };
 
