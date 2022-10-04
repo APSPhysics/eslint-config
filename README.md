@@ -71,9 +71,9 @@ Additionally, the `@ts-expect-error` comment must include a description, so that
 
 #### Explanation
 
-It's possible to expose secrets through the env with NextJS, Gatsby, and Astro by prepending the env with a term specific to the framework, "NEXT_PUBLIC", "GATSBY", and "PUBLIC", respectively. If such an env is used in client-side code, the framework replaces the term, process.env.PUBLIC_KEY with the value at build time "MY_KEY_IN_PLAINTEXT"
+It's possible to expose secrets through the env with NextJS, Gatsby, Vite, and Astro by prepending the env with a term specific to the framework, `NEXT_PUBLIC_`, `GATSBY_`, `VITE_`, and `PUBLIC_`, respectively. If such an env is used in client-side code, the framework replaces the term, `process.env.PUBLIC_KEY` with the value at build time `MY_KEY_IN_PLAINTEXT`.
 
-This rule checks any such variable names for red flags that hint that sensitive material is being sent to the browser, i.e. variable names containing the terms "SECRET", "PASSWORD", or "PW". For example, `process.env.CLIENT_SECRET` would not be caught by the linter, since it cannot be used client-side, while `process.env.NEXT_PUBLIC_CLIENT_SECRET` or `process.env.NEXT_PUBLIC_DATABASE_PW` would.
+This rule checks any such variable names for red flags that hint that sensitive material is being sent to the browser, i.e. variable names containing the terms `SECRET`, `PASSWORD`, or `PW`. For example, `process.env.CLIENT_SECRET` would not be caught by the linter, since it cannot be used client-side, while `process.env.NEXT_PUBLIC_CLIENT_SECRET` or `process.env.NEXT_PUBLIC_DATABASE_PW` would.
 
 #### Usage
 
