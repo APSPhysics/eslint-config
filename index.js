@@ -9,7 +9,7 @@ module.exports = {
     "plugin:functional/recommended",
     "plugin:prettier/recommended", // Should always be last. Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
   ],
-  plugins: ["functional", "jsx-a11y", "prettier"],
+  plugins: ["functional", "jsx-a11y", "prettier", "local-rules"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off", // This rule prevents you from letting React component return types be inferred.
     "functional/no-expression-statement": "off", // This rule causes an error with ReactDOM.render()
@@ -28,6 +28,7 @@ module.exports = {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
+    "local-rules/no-public-secrets": "error",
     // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
     "@typescript-eslint/ban-ts-comment": [
       2,
