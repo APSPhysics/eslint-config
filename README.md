@@ -1,6 +1,6 @@
 # @apsphysics/eslint-config
 
-A set of sensible ESLint rules for React and TypeScript projects with an emphasis on immutability and accessibility.
+ESLint configuration for APS Physics projects
 
 ## Features
 
