@@ -24,6 +24,8 @@ const invalidCases = [
   "GATSBY_PW_KEY",
   "GATSBY_API_PW",
   "GATSBY_API_PW_KEY",
+  // Vite
+  "VITE_SECRET",
   // NextJS
   "NEXT_PUBLIC_SECRET",
   "NEXT_PUBLIC_SECRET_KEY",
