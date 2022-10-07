@@ -1,5 +1,11 @@
 # Change Log
 
+# 1.1.1
+
+- Updated internals for `no-public-secrets` plugin to address plugin usage issue
+- Updated dependencies and failing tests
+- Updated .npmignore to exclude tests and internal demo
+
 # 1.1.0
 
 - New `no-public-secrets` rule to prevent secrets from being committed to source control
