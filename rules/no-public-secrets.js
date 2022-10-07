@@ -36,6 +36,4 @@ const noPublicSecrets = {
   },
 };
 
-module.exports = {
-  noPublicSecrets: noPublicSecrets,
-};
+module.exports = noPublicSecrets;
