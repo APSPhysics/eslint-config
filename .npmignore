@@ -1,11 +1,10 @@
-node_modules/!eslint-plugin-local-rules
-# !node_modules/eslint-plugin-local-rules
+demo
 .DS_Store
 .editorconfig
 .gitignore
-CHANGELOG.md
 .prettierrc
 .eslintrc
-test-react-app
 .github
+.husky
+CHANGELOG.md
 
