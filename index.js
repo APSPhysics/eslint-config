@@ -35,7 +35,7 @@ module.exports = {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
-    "local-rules/no-public-secrets": "error",
+    "rulesdir/no-public-secrets": "error",
     // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
     "@typescript-eslint/ban-ts-comment": [
       2,

@@ -4,11 +4,6 @@
   "description": "ESLint configuration for APS Physics projects.",
   "author": "APSPhysics",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "eslint-local-rules.js",
-    "rules/*.js"
-  ],
   "scripts": {
     "format": "prettier --write *.js",
     "lint": "eslint",
