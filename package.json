@@ -6,7 +6,9 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "eslint-local-rules.js"
+    "eslint-local-rules.js",
+    "rules/*.js",
+    "node_modules/eslint-plugin-local-rules/**/*"
   ],
   "scripts": {
     "format": "prettier --write *.js",
