@@ -1,4 +1,4 @@
-# @apsphysics/eslint-config
+# @eslint-config-aps
 
 ESLint configuration for APS Physics projects
 
@@ -17,31 +17,12 @@ Rules for
 
 ## Setup (required for installation)
 
-This package is published as a public package on Github. To install it, you must first set up your project to use Github packages, which requires a Github personal access token.
-
-The easiest way to get started is as follows:
-
-1. Create a Github personal access token with the `read:packages` scope and export it as a variable in your local `.bashrc` or `.zshrc` file. For example, `export GITHUB_AUTH_TOKEN=your_token_here`.
-2. Create a `.npmrc` file in your project and add the following:
-
-```
-//npm.pkg.github.com/:_authToken=${GITHUB_AUTH_TOKEN}
-registry=https://registry.npmjs.org
-@apsphysics:registry=https://npm.pkg.github.com/
-```
-
-See [this guide](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages) for more information and additional options.
+This package is published as a public package on NPM.
 
 ## Installation
 
 ```sh
-yarn add -D @apsphysics/eslint-config eslint prettier typescript
-```
-
-or
-
-```sh
-npm install --save-dev @apsphysics/eslint-config eslint prettier typescript
+npm install --save-dev eslint-config-aps eslint prettier typescript
 ```
 
 ## Usage
@@ -50,7 +31,7 @@ Once the library and all required dependencies are installed, you can use the pa
 
 ```json
 {
-  "extends": ["@apsphysics"]
+  "extends": ["aps"]
 }
 ```
 
@@ -60,7 +41,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["@apsphysics"],
+  "extends": ["aps"],
   "rules": {
     "functional/no-mixed-type": "warn"
   }
@@ -123,8 +104,8 @@ This is not a perfect linting rule. For example, `NEXT_PUBLIC_TOTALLY_SAFE_KEY` 
 
 ### Committing Code to GitHub
 
-This repo uses [Husky](https://typicode.github.io/husky/#/) and [@commitlint](https://commitlint.js.org/#/) to enforce commit messages that follow the [Conventional Commit](https://www.conventionalcommits.org) specification. Please refer to the [APS Playbook](https://apsphysics.atlassian.net/wiki/spaces/SWENG/pages/993786/Playbook#Conventional-Commits) for a quick reference.
+This repo uses [Husky](https://typicode.github.io/husky/#/) and [@commitlint](https://commitlint.js.org/#/) to enforce commit messages that follow the [Conventional Commit](https://www.conventionalcommits.org) specification.
 
 ### Publishing to GitHub Packages
 
-This package is published automatically with a GitHub Action that is triggered via GitHub releases. Release drafts are created by the [np](https://www.npmjs.com/package/np) package by running the `npm run release` command. This will prompt you to select the appropriate version type (patch, minor, major, etc.) and will automatically create a detailed release draft containing all commit messages since the previous release. Once you save the release, the GitHub Action will automatically take care of publishing the new version of the package to the GitHub package registry.
+This package is published to npm using the popular [np](https://www.npmjs.com/package/np) library. To publish, simply run `npm run release` from the root directory and follow the prompts.
