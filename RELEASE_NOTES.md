@@ -1,6 +1,6 @@
 # Change Log
 
-# 1.2.0
+# 1.2
 
 - Moved to scoped package name
 - Added sort import rules
