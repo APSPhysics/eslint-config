@@ -1,5 +1,11 @@
 # Change Log
 
+# 1.2.0
+
+- Moved to scoped package name
+- Added sort import rules
+- Updated dependencies
+
 # 1.1.1
 
 - Updated internals for `no-public-secrets` plugin to address plugin usage issue
