@@ -4,7 +4,7 @@ ESLint configuration for React and TypeScript projects
 
 ## Features
 
-Rules for
+Linting rules for:
 
 - TypeScript
 - React and React Hooks
@@ -17,12 +17,12 @@ Rules for
 
 ## Setup (required for installation)
 
-This package is published as a public package on NPM.
+This package is published as a scoped public package on NPM. 
 
 ## Installation
 
 ```sh
-npm install --save-dev @apsphysics/eslint-config eslint prettier typescript
+npm i -D @apsphysics/eslint-config eslint prettier typescript
 ```
 
 ## Usage

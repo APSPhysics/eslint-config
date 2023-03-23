@@ -1,5 +1,9 @@
 # Change Log
 
+# 1.2.3
+
+- Disabled various functional rules that were causing issues with React 18
+
 # 1.2
 
 - Moved to scoped package name
