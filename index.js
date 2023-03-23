@@ -29,6 +29,8 @@ module.exports = {
     "functional/no-throw-statement": "off",
     "no-case-declarations": "off",
     "functional/no-conditional-statements": "off",
+    "functional/prefer-immutable-types": "off",
+    "functional/no-mixed-types": "off",
     "functional/immutable-data": [
       "warn",
       { ignorePattern: ["^module\\.exports"] },
@@ -40,7 +42,7 @@ module.exports = {
     "rulesdir/no-public-secrets": "error",
     // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
     "@typescript-eslint/ban-ts-comment": [
-      2,
+      "error",
       { "ts-expect-error": "allow-with-description" },
     ],
     "sort-imports": ["error", { ignoreDeclarationSort: true }],
