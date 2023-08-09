@@ -4,12 +4,15 @@
   "description": "ESLint configuration for APS Physics projects.",
   "author": "APSPhysics",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "format": "prettier --write *.js",
     "lint": "eslint",
     "test": "npm run lint && jest",
     "prerelease": "npm run test && npm run format",
-    "release": "npm run prerelease && np"
+    "release": "npm run prerelease && np --no-2fa"
   },
   "repository": {
     "type": "git",

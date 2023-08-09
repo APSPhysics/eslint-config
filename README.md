@@ -1,10 +1,10 @@
-# @eslint-config-aps
+# @apsphysics/eslint-config
 
-ESLint configuration for APS Physics projects
+ESLint configuration for React and TypeScript projects
 
 ## Features
 
-Rules for
+Linting rules for:
 
 - TypeScript
 - React and React Hooks
@@ -17,12 +17,12 @@ Rules for
 
 ## Setup (required for installation)
 
-This package is published as a public package on NPM.
+This package is published as a scoped public package on NPM. 
 
 ## Installation
 
 ```sh
-npm install --save-dev eslint-config-aps eslint prettier typescript
+npm i -D @apsphysics/eslint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ Once the library and all required dependencies are installed, you can use the pa
 
 ```json
 {
-  "extends": ["aps"]
+  "extends": ["@apsphysics"]
 }
 ```
 
@@ -41,7 +41,7 @@ Any rule that is included with this library can be easily overwritten using the 
 
 ```json
 {
-  "extends": ["aps"],
+  "extends": ["@apsphysics"],
   "rules": {
     "functional/no-mixed-type": "warn"
   }

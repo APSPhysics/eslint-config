@@ -4,8 +4,6 @@ const rulesDirPlugin = require("eslint-plugin-rulesdir");
 
 rulesDirPlugin.RULES_DIR = path.join(__dirname, "rules");
 
-console.info(rulesDirPlugin.RULES_DIR);
-
 module.exports = {
   extends: [
     "eslint:recommended",
@@ -27,6 +25,12 @@ module.exports = {
     "functional/no-conditional-statement": "off", // if statements are useful and quite nice for conditional component rendering logic.
     "functional/no-return-void": "off", // In React, you are often returning void. i.e. useState setters
     "functional/no-try-statement": "off", // What's wrong with a try/catch? They are very useful with async/await.
+    "functional/no-expression-statements": "off",
+    "functional/no-throw-statement": "off",
+    "no-case-declarations": "off",
+    "functional/no-conditional-statements": "off",
+    "functional/prefer-immutable-types": "off",
+    "functional/no-mixed-types": "off",
     "functional/immutable-data": [
       "warn",
       { ignorePattern: ["^module\\.exports"] },
@@ -38,10 +42,50 @@ module.exports = {
     "rulesdir/no-public-secrets": "error",
     // only allow descriptive ts-expect-errors. Full Explanation https://github.com/APSPhysics/eslint-config/issues/5
     "@typescript-eslint/ban-ts-comment": [
-      2,
+      "error",
       { "ts-expect-error": "allow-with-description" },
     ],
+    "sort-imports": ["error", { ignoreDeclarationSort: true }],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+        ],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "builtin",
+            position: "before",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["react"],
+        "newlines-between": "always",
+        alphabetize: {
+          order:
+            "asc" /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */,
+          caseInsensitive: true /* ignore case. Options: [true, false] */,
+        },
+      },
+    ],
   },
+  ignorePatterns: [
+    "dist",
+    "out",
+    "node_modules",
+    "examples",
+    "scripts",
+    "tailwind-config",
+    "*.css",
+    "*.svg",
+  ],
 };
 
 /**
