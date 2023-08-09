@@ -31,10 +31,6 @@ module.exports = {
     "functional/no-conditional-statements": "off",
     "functional/prefer-immutable-types": "off",
     "functional/no-mixed-types": "off",
-    "functional/immutable-data": [
-      "warn",
-      { ignorePattern: ["^module\\.exports"] },
-    ],
     "no-console": ["error", { allow: ["error", "warn", "info"] }],
     "prettier/prettier": "error",
     "arrow-body-style": "off",
