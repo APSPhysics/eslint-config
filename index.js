@@ -7,8 +7,8 @@ rulesDirPlugin.RULES_DIR = path.join(__dirname, "rules");
 module.exports = {
   extends: [
     "eslint:recommended",
-    "react-app", // See below
-    "react-app/jest",
+    // "react-app", // See below
+    // "react-app/jest",
     "prettier",
     "plugin:jsx-a11y/recommended",
     "plugin:functional/recommended",

@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "eslint-config-prettier": "^9.0.0",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-functional": "^6.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-rulesdir": "^0.2.2",
