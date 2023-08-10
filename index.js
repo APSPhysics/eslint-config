@@ -6,9 +6,8 @@ rulesDirPlugin.RULES_DIR = path.join(__dirname, "rules");
 
 module.exports = {
   extends: [
+    require.resolve("./jest.js"),
     "eslint:recommended",
-    // "react-app", // See below
-    // "react-app/jest",
     "prettier",
     "plugin:jsx-a11y/recommended",
     "plugin:functional/recommended",
@@ -32,6 +31,7 @@ module.exports = {
     "rulesdir",
     "import",
     "@typescript-eslint",
+    "jest",
   ],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off", // This rule prevents you from letting React component return types be inferred.
