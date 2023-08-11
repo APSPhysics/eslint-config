@@ -1,3 +1,5 @@
+"use strict";
+
 const path = require("path");
 
 const rulesDirPlugin = require("eslint-plugin-rulesdir");
@@ -5,8 +7,10 @@ const rulesDirPlugin = require("eslint-plugin-rulesdir");
 rulesDirPlugin.RULES_DIR = path.join(__dirname, "rules");
 
 module.exports = {
+  root: true,
   extends: [
     require.resolve("./jest.js"),
+    require.resolve("./react.js"),
     "eslint:recommended",
     "prettier",
     "plugin:jsx-a11y/recommended",
